@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Delete Account</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background:url("https://www.bhmpics.com/downloads/bank-backgrounds-/13.online-banking-banner-website-internet-mobile-phone-blue-background-electronic-bank-payment-copy-space-digital-204929150.jpg");
+    }
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #343a40;
+        padding-top: 20px;
+    }
+    .sidebar a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar a:hover {
+        background-color: #575d63;
+    }
+    .container {
+        background-color: white;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #c82333;
+    }
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <h2 class="text-center text-light">APANA BANK</h2>
+    <a href="AccountDeposite.html"><i class="fas fa-coins"></i> Deposite Amount</a>
+    <a href="AmountWithdraw.html"><i class="fas fa-money-bill-wave"></i> Withdraw Amount</a>
+    <a href="CheckBalance.jsp"><i class="fas fa-balance-scale"></i> Check Balance</a>
+    <a href="viewUser.jsp"><i class="fas fa-user"></i> View User</a>
+    <a href="DeleteAccount.html"><i class="fas fa-user-minus"></i> Delete Account</a>
+    <a href="index.html"><i class="fas fa-sign-in-alt"></i> Log in</a>
+</div>
+
+<div class="container">
+    <h2>Delete Account</h2>
+    <form action="DeleteAccount" method="Post">
+        <input type="text" name="ano" placeholder="Enter Account Number" required>
+        <input type="submit" value="Delete Account">
+    </form>
+</div>
+</body>
+</html>

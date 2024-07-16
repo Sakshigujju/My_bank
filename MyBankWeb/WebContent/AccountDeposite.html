@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Deposit Money</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background:url("https://www.bhmpics.com/downloads/bank-backgrounds-/13.online-banking-banner-website-internet-mobile-phone-blue-background-electronic-bank-payment-copy-space-digital-204929150.jpg");
+    }
+    .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #343a40;
+        padding-top: 20px;
+    }
+    .sidebar a {
+        padding: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar a:hover {
+        background-color: #575d63;
+    }
+    form {
+        background-color: white;
+        padding: 50px;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 450px;
+        width: 100%;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <h2 class="text-center text-light">APANA BANK</h2>
+    <a href="AccountDeposite.html"><i class="fas fa-coins"></i> Deposite Amount</a>
+    <a href="AmountWithdraw.html"><i class="fas fa-money-bill-wave"></i> Withdraw Amount</a>
+    <a href="CheckBalance.jsp"><i class="fas fa-balance-scale"></i> Check Balance</a>
+    <a href="viewUser.jsp"><i class="fas fa-user"></i> View User</a>
+    <a href="DeleteAccount.html"><i class="fas fa-user-minus"></i> Delete Account</a>
+    <a href="index.html"><i class="fas fa-sign-in-alt"></i> Log in</a>
+</div>
+
+    <form action="AccountDeposite" method="Post">
+        <label for="ano">Account No :</label>
+        <input type="text" name="ano" placeholder="Enter Account Number" required><br><br>
+
+        <label for="amount">Amount :</label>
+        <input type="number" name="amount" placeholder="Enter the amount" required><br><br>
+
+        <button type="submit">Deposit</button><br><br>
+    </form>
+</body>
+</html>
